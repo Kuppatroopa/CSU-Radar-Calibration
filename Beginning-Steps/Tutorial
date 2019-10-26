@@ -1,1 +1,47 @@
 Git Tutorial
+
+Interactive tutorial from github
+
+https://try.github.io/levels/1/challenges/1
+
+Tutorial Instructions:
+
+Search for ’portable git’ in google.
+
+Download ‘thumb drive’ version (these steps for windows users)
+
+Open git-bash. This will open a bash prompt (time to start learning linux!) (or just open a terminal in linux)
+
+Open https://github.com/ColTigh/CSU-Radar-Calibration/ repo in a browser and set aside for the time being
+
+Clone the https://github.com/ColTigh/CSU-Radar-Calibration repo by typing the following into your bash command prompt
+
+git clone https://github.com/ColTigh/CSU-Radar-Calibration
+
+Navigate to your new ‘Beginng-Steps’ folder in the windows explorer (or for the pros you can ‘cd Beginng-Steps’)
+
+Make a new folder with your first name and last initial (ex, elijaha) inside of the ‘Beginng-Steps’ directory
+
+Make a new text file inside of your new folder, and type some text into your new file.
+
+Go back to the bash command prompt and navigate to the top of the git repository (base directory a.k.a. the gittutorial folder) and type
+the following, making sure to notice what each command is doing
+
+git status
+
+git add <folder you created>
+
+git status
+
+git commit –m “This is my first upload. <username>”
+
+git push –u origin master
+
+If the last command fails, it should say something along the lines of “There are changes in the master branch not reflected in your local
+branch”. This means you need to pull the latest files before you can push anything. This helps to ensure people don’t overwrite new
+changes that someone else has checked in by mistake. Since you have already ‘committed’ your changes in your local branch, simply run
+the ‘git pull’ command to pull the latest changes to the repository. You will get a prompt with a message similar to “Merging branch..”
+Once the pull has finished you can rerun the push command to push your changes.
+
+Go back to your browser and refresh the page. You will now see your new folder and file as well as the folders and files that others have
+made. USE THIS REPO TO TEST WITH BEFORE YOU BREAK THE REAL REPOSITORY!!
