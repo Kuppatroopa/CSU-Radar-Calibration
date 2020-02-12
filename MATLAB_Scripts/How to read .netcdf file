@@ -1,0 +1,8 @@
+%Displaying all information in the .netcdf file
+ncdisp('filename')
+%Examples of extracting variables in .netcdf file using ncread
+Ref          = ncread('Filename.nc','Reflectivity');
+GateWidth    = ncread('Filename.nc','GateWidth');
+Azimuth      = ncread('Filename.nc','Azimuth');
+%Extracting an attribute of the .netcdf file such as NumGates
+NumGates     = ncreadatt('Filename.nc','/','NumGates');
